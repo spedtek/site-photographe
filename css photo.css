@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: url(photo-header-3.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+.header .container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.header-navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 1em;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.header-navbar-logo img{
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+}
+.toggle {
+    display: none;
+    color: white;
+}
+
+.menu-link{
+    margin-left: 30px;
+    color: white;
+}
+@media all and (max-width: 640px) {
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+    .header-navbar-logo {
+        position: relative;
+        z-index: 20;
+    }
+    .ouvrir {
+        display: block;
+    }
+    .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+    .open .fermer {
+        display: block;
+    }
+    .header-navbar-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #304e5b;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-110%);
+        transition: transform 1s;
+    }
+    .menu-link {
+        font-size: 2rem;
+    }
+    .open .header-navbar-menu {
+        transform: translateX(0);
+    }
+}
+.header-slogan{
+    text-align: center;
+}
+.slogan-title{
+    color: #304e5b;
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 10%;
+    border: 3px solid #304e5b;
+    background-color: white;
+}
+.slogan-btn{
+    padding: 15px 20px;
+    background: yellow;
+    border-radius: 4px;
+}
+@media all and (max-width: 600px) {
+    .slogan-title{
+        font-size: 1.5em;
+    }
+}
