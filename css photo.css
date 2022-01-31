@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Mochiy+Pop+P+One&family=Montserrat&family=Playfair+Display:ital@1&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,300;1,400&family=Mochiy+Pop+P+One&family=Montserrat&family=Parisienne&family=Playfair+Display:ital@1&family=Source+Sans+Pro&family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+/*--HEADER--*/
 .header{
     height: 100vh;
     width: 100%;
@@ -53,17 +56,17 @@ body{
 .menu-link-1{
     margin-left: 30px;
     color: #304e5b;
-    border: 3px solid #304e5b;
+    border: 3px solid #4281A4;
     font-weight: 800;
     background-color: white;
     padding: 7px 10px;
 
 }
 .menu-link:hover{
-    color: #304e5b;
-    border: 3px solid #304e5b;
+    color: white;
+    border: 3px solid white;
     font-weight: 800;
-    background-color: white;
+    background-color: #E6B89C;
 }
 @media all and (max-width: 810px) {
 
@@ -96,7 +99,7 @@ body{
         left: 0;
         width: 100%;
         height: 100vh;
-        background: #304e5b;
+        background: #4281A4;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -115,27 +118,34 @@ body{
 .header-slogan{
     text-align: center;
     background-color: #FFFFFF80;
+    border: 3px solid white;
     margin: 20%;
 }
 .header-slogan .title{
+    padding-top: 10px;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    color: #304e5b;
+    color: #4281A4;
     font-weight: 800;
 ;
 }
 .slogan{
-    color: #304e5b;
+    color: #4281A4;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
     margin: 10px;
+    margin-bottom: 40px;
     padding: 10px;
     text-transform: uppercase;
     font-weight: 800;
 }
 .header-btn{
     padding: 20px 20px;
-    background: #677179;
+    font-weight: 600;
+    background: #E6B89C;
     color: white;
     border-radius: 4px;
+    border: 3px solid white;
 }
 @media all and (max-width: 950px) {
     .header-slogan .title{
@@ -162,6 +172,78 @@ body{
         font-size: 0.7em;
     }
     .header-btn{
+        font-size: 0.5em;
+        padding: 5px
+    }
+}
+.medias {
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #E6B89C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+.logo-medias{
+    width: 50px;
+    height: 50px;
+}
+@media all and (max-width: 500px) {
+    .medias {
+        position: absolute;
+        top: 80%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+    .bulle{
+        width: 40px;
+        height: 40px;
+    }
+}
+/*--HEADER--*/
+
+/*--SECTION 1--*/
+
+/*--FOOTER--*/
+footer{
+    background-color: #E6B89C;
+    color: white;
+    padding: 10px 40px;
+}
+.colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright{
+    text-align: center;
+    margin: 40px;
+}
+
+@media all and (max-width: 750px) {
+    footer{
         font-size: 0.7em;
+    }
+    .colonnes{
+        display: flex;
+        flex-direction: column;
     }
 }
